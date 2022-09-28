@@ -6,6 +6,14 @@
     padding-bottom: 200px;
 }
 
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .hero-section {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg-desktop@2x.jpg);
+    }
+}
+
 .hero-container {
     display: flex;
     flex-direction: column;

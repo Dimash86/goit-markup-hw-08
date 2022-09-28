@@ -21,7 +21,7 @@
   <!-- Body -->
   <body>
     <header class="page-header">
-      <div class="container page-header-container">
+      <div class="container page-header__container">
         <nav class="page-nav">
           <a class="page-logo link" href="./index.html"
             >Web<span class="page-logo__colortext">Studio</span></a
@@ -38,15 +38,20 @@
             </li>
           </ul>
         </nav>
+        <button type="button" class="open-mobile-menu-button" data-menu-open>
+          <svg aria-label="кнопка меню" class="open-mobile-menu-button__icon">
+            <use href="./images/sprite.svg#mobile-icon-menu"></use>
+          </svg>
+        </button>
         <ul class="menu-contacts list">
-          <li>
+          <li class="menu-contacts__list">
             <a
               class="menu-contacts__mail link"
               href="mailto:info@devstudio.com"
             >
               <svg
                 aria-label="іконка пошти"
-                class="menu-contacts__icon"
+                class="menu-contacts__icon menu-contacts__icon-mail"
                 width="16px"
                 height="12px"
               >
@@ -55,11 +60,11 @@
               info@devstudio.com
             </a>
           </li>
-          <li>
+          <li class="menu-contacts__list">
             <a class="menu-contacts__tel link" href="tel:+380961111111">
               <svg
                 aria-label="іконка телефону"
-                class="menu-contacts__icon"
+                class="menu-contacts__icon .menu-contacts__icon-phone"
                 width="10px"
                 height="16px"
               >
@@ -70,10 +75,68 @@
           </li>
         </ul>
       </div>
+
+      <div class="mobile-menu" data-menu>
+        <div class="container mobile-menu__container">
+          <button
+            class="mobile-menu__close-btn button"
+            type="button"
+            data-menu-close
+          >
+            <svg
+              aria-label="кнопка закриття вікна меню"
+              class="mobile-menu__close-btn-icon"
+            >
+              <use href="./images/sprite.svg#icon-close-button"></use>
+            </svg>
+          </button>
+          <ul class="list mobile-menu__menu">
+            <li>
+              <a class="mobile-menu__link current link" href="./index.html"
+                >Студія</a
+              >
+            </li>
+            <li>
+              <a class="mobile-menu__link link" href="./portfolio.html"
+                >Портфоліо</a
+              >
+            </li>
+            <li>
+              <a class="mobile-menu__link link" href="#contacts">Контакти</a>
+            </li>
+          </ul>
+          <ul class="list mobile-menu__contacts">
+            <li>
+              <a class="mobile-menu__tel link" href="tel:+380961111111"
+                >+38 096 111 11 11</a
+              >
+            </li>
+            <li>
+              <a class="mobile-menu__mail link" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+          <ul class="list mobile-menu__social-links-menu">
+            <li class="mobile-menu__list">
+              <a class="mobile-menu__social-link link" href="">Instagram</a>
+            </li>
+            <li class="mobile-menu__list">
+              <a class="mobile-menu__social-link link" href="">Twitter</a>
+            </li>
+            <li class="mobile-menu__list">
+              <a class="mobile-menu__social-link link" href="">Facebook</a>
+            </li>
+            <li class="mobile-menu__list">
+              <a class="mobile-menu__social-link link" href="">Linkedin</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </header>
 
     <!-- Hero -->
-    <main class="page-main">
+    <!-- <main class="page-main">
       <section class="hero-section">
         <div class="container hero-container">
           <h1 class="hero-container__title">
@@ -84,10 +147,10 @@
             Замовити послугу
           </button>
         </div>
-      </section>
+      </section> -->
 
-      <!-- Section features -->
-      <section class="features">
+    <!-- Section features -->
+    <!-- <section class="features">
         <div class="container">
           <ul class="list features__list">
             <li>
@@ -139,10 +202,10 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
-      <!-- Section benefits -->
-      <section class="benefits">
+    <!-- Section benefits -->
+    <!-- <section class="benefits">
         <div class="container">
           <h2 class="section-title">Чим ми займаємось</h2>
           <ul class="list benefits__list">
@@ -175,10 +238,10 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
-      <!-- Section team -->
-      <section class="team">
+    <!-- Section team -->
+    <!-- <section class="team">
         <div class="container">
           <h2 class="section-title">Наша команда</h2>
           <ul class="list team__list">
@@ -352,10 +415,10 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
-      <!-- Section clients -->
-      <section class="clients">
+    <!-- Section clients -->
+    <!-- <section class="clients">
         <div class="container">
           <h2 class="section-title">Постійні клієнти</h2>
           <ul class="clients__list">
@@ -403,10 +466,10 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
-      <!-- Footer -->
-      <footer class="footer">
+    <!-- Footer -->
+    <!-- <footer class="footer">
         <div class="container footer-container">
           <div class="logo-nav">
             <a id="contacts" class="footer-logo link" href="./index.html"
@@ -484,7 +547,6 @@
                   class="footer-input-mail"
                   type="email"
                   name="email"
-                  autofocus
                   placeholder="E-mail"
                 />
               </label>
@@ -497,9 +559,9 @@
             </form>
           </div>
         </div>
-      </footer>
+      </footer> -->
 
-      <div class="backdrop is-hidden" data-modal>
+    <!-- <div class="backdrop is-hidden" data-modal>
         <div class="modal">
           <button class="modal-close-btn button" type="button" data-modal-close>
             <svg aria-label="кнопка закриття вікна" class="close-btn-img">
@@ -570,6 +632,7 @@
         </div>
       </div>
     </main>
-    <script src="./js/modal.js"></script>
+    <script src="./js/modal.js"></script> -->
+    <script src="./js/menu-modal.js"></script>
   </body>
 </html>

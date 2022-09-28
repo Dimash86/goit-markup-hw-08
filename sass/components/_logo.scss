@@ -34,3 +34,12 @@
 .footer-logo__colortext {
     color: #FFFFFF;
 }
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .page-logo {
+    margin-right: 87px;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.03em;
+    }
+}
