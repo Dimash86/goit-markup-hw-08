@@ -59,12 +59,16 @@
         background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg-tablet@2x.jpg);
         }
     }
+    .hero-container {
+        padding: 118px 204px;
+    }
 }
 
 @media screen and (min-width: 1200px) {
     .hero-section {
         background-color: var(--secondary-bg-color);
         background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg.jpg);
+        height: 600px;
     }
 
 @media (min-device-pixel-ratio: 2) and (min-width: 1200px),
@@ -72,6 +76,16 @@
     screen and (min-resolution: 2dppx) and (min-width: 1200px) {
     .hero-section {
         background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg-desktop@2x.jpg);
+        height: 600px;
         }
+    }
+
+    .hero-container {
+        padding: 200px 230px;
+    }
+
+    .hero-container__title {
+        font-size: 44px;
+        line-height: 1.36;
     }
 }

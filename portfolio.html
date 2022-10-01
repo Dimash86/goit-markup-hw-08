@@ -21,7 +21,7 @@
   <!-- Body -->
   <body>
     <header class="page-header">
-      <div class="container page-header-container">
+      <div class="container page-header__container">
         <nav class="page-nav">
           <a class="page-logo link" href="./index.html"
             >Web<span class="page-logo__colortext">Studio</span></a
@@ -40,15 +40,20 @@
             </li>
           </ul>
         </nav>
+        <button type="button" class="open-mobile-menu-button" data-menu-open>
+          <svg aria-label="кнопка меню" class="open-mobile-menu-button__icon">
+            <use href="./images/sprite.svg#mobile-icon-menu"></use>
+          </svg>
+        </button>
         <ul class="menu-contacts list">
-          <li>
+          <li class="menu-contacts__list">
             <a
               class="menu-contacts__mail link"
               href="mailto:info@devstudio.com"
             >
               <svg
                 aria-label="іконка пошти"
-                class="menu-contacts__icon"
+                class="menu-contacts__icon menu-contacts__icon-mail"
                 width="16px"
                 height="12px"
               >
@@ -57,11 +62,11 @@
               info@devstudio.com
             </a>
           </li>
-          <li>
+          <li class="menu-contacts__list">
             <a class="menu-contacts__tel link" href="tel:+380961111111">
               <svg
                 aria-label="іконка телефону"
-                class="menu-contacts__icon"
+                class="menu-contacts__icon menu-contacts__icon-tel"
                 width="10px"
                 height="16px"
               >
@@ -72,12 +77,69 @@
           </li>
         </ul>
       </div>
+
+      <div class="mobile-menu" data-menu>
+        <div class="container mobile-menu__container">
+          <button
+            class="mobile-menu__close-btn button"
+            type="button"
+            data-menu-close
+          >
+            <svg
+              aria-label="кнопка закриття вікна меню"
+              class="mobile-menu__close-btn-icon"
+            >
+              <use href="./images/sprite.svg#icon-close-button"></use>
+            </svg>
+          </button>
+          <ul class="list mobile-menu__menu">
+            <li>
+              <a class="mobile-menu__link current link" href="./index.html"
+                >Студія</a
+              >
+            </li>
+            <li>
+              <a class="mobile-menu__link link" href="./portfolio.html"
+                >Портфоліо</a
+              >
+            </li>
+            <li>
+              <a class="mobile-menu__link link" href="#contacts">Контакти</a>
+            </li>
+          </ul>
+          <ul class="list mobile-menu__contacts">
+            <li>
+              <a class="mobile-menu__tel link" href="tel:+380961111111"
+                >+38 096 111 11 11</a
+              >
+            </li>
+            <li>
+              <a class="mobile-menu__mail link" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+          <ul class="list mobile-menu__social-links-menu">
+            <li class="mobile-menu__list">
+              <a class="mobile-menu__social-link link" href="">Instagram</a>
+            </li>
+            <li class="mobile-menu__list">
+              <a class="mobile-menu__social-link link" href="">Twitter</a>
+            </li>
+            <li class="mobile-menu__list">
+              <a class="mobile-menu__social-link link" href="">Facebook</a>
+            </li>
+            <li class="mobile-menu__list">
+              <a class="mobile-menu__social-link link" href="">Linkedin</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </header>
 
     <!-- Hero -->
-    <!-- <main> -->
-    <!-- Section buttons -->
-    <!-- <section class="portfolio-container">
+    <main>
+      <section class="portfolio-container">
         <div class="container">
           <ul class="list buttons-list">
             <li>
@@ -117,10 +179,10 @@
                 Маркетинг
               </button>
             </li>
-          </ul> -->
+          </ul>
 
-    <!-- Section portfolio -->
-    <!-- <ul class="list portfolio-list">
+          <!-- Section portfolio -->
+          <ul class="list portfolio-list">
             <li>
               <a class="portfolio-list__link" href="">
                 <div class="portfolio-list__wrapper">
@@ -308,10 +370,10 @@
           </ul>
         </div>
       </section>
-    </main> -->
+    </main>
 
     <!-- Footer -->
-    <!-- <footer class="footer">
+    <footer class="footer">
       <div class="container footer-container">
         <div class="logo-nav">
           <a id="contacts" class="footer-logo link" href="./index.html"
@@ -401,6 +463,6 @@
           </form>
         </div>
       </div>
-    </footer> -->
+    </footer>
   </body>
 </html>

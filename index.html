@@ -210,45 +210,78 @@
           <h2 class="section-title">Чим ми займаємось</h2>
           <ul class="list benefits__list">
             <li class="benefits__list-li">
-              <img
-                srcset="
-                  ./images/desktop/studio-1-desktop.webp    1x,
-                  ./images/desktop/studio-1-desktop@2x.webp 2x,
-                  ./images/desktop/studio-1-desktop@2x.jpg  2x
-                "
-                src="./images/desktop/studio-1-desktop.jpg"
-                alt="Розробка програмного коду"
-                class="img"
-                width="370"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/desktop/studio-1-desktop.webp    1x,
+                    ./images/desktop/studio-1-desktop@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/desktop/studio-1-desktop.jpg    1x,
+                    ./images/desktop/studio-1-desktop@2x.jpg 2x
+                  "
+                />
+                <img
+                  src="./images/desktop/studio-1-desktop.jpg"
+                  alt="Розробка програмного коду"
+                  class="img"
+                />
+              </picture>
               <p class="benefits__overlay desktop-app">десктопні додатки</p>
             </li>
             <li class="benefits__list-li">
-              <img
-                srcset="
-                  ./images/desktop/studio-2-desktop.webp    1x,
-                  ./images/desktop/studio-2-desktop@2x.webp 2x,
-                  ./images/desktop/studio-2-desktop@2x.jpg  2x
-                "
-                src="./images/desktop/studio-2-desktop.jpg"
-                alt="Створення мобільних додатків"
-                class="img"
-                width="370"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/desktop/studio-2-desktop.webp    1x,
+                    ./images/desktop/studio-2-desktop@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/desktop/studio-2-desktop.jpg    1x,
+                    ./images/desktop/studio-2-desktop@2x.jpg 2x
+                  "
+                />
+                <img
+                  src="./images/desktop/studio-2-desktop.jpg"
+                  alt="Створення мобільних додатків"
+                  class="img"
+                />
+              </picture>
               <p class="benefits__overlay mobile-app">мобільні додатки</p>
             </li>
             <li class="benefits__list-li">
-              <img
-                srcset="
-                  ./images/desktop/studio-3-desktop.webp    1x,
-                  ./images/desktop/studio-3-desktop@2x.webp 2x,
-                  ./images/desktop/studio-3-desktop@2x.jpg  2x
-                "
-                src="./images/desktop/studio-3-desktop.jpg"
-                alt="Розробка дизайн макетів"
-                class="img"
-                width="370"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/desktop/studio-3-desktop.webp    1x,
+                    ./images/desktop/studio-3-desktop@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/desktop/studio-3-desktop.jpg    1x,
+                    ./images/desktop/studio-3-desktop@2x.jpg 2x
+                  "
+                />
+                <img
+                  src="./images/desktop/studio-3-desktop.jpg"
+                  alt="Розробка дизайн макетів"
+                  class="img"
+                />
+              </picture>
               <p class="benefits__overlay designe-app">дизайнерські рішення</p>
             </li>
           </ul>
